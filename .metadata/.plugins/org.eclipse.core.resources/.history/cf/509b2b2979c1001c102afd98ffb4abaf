@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+package string.com;
+
+import java.util.Scanner;
+
+/**
+ * @author dell1
+ *
+ */
+ public class ArrayDw
+ {
+	
+	
+	     public static void main(String[]args)
+	     {
+	         Scanner scan = new Scanner (System.in);
+	         int n= scan.nextInt();
+	         int a[]={17,28,30};
+	         int b[]={99,16,8};
+	         int c=0,d=0;
+	         for(int i =0;i<n;i++)
+	         {
+	        	 
+	             if(a[i]>b[i])
+	             {
+	            	 c++;
+	             }
+	             else
+	             {
+	            	 d++;
+	             }
+	             if(a[i]==b[i])
+	             {
+	            	 d--;
+	             }
+	         }
+	         scan.close();
+	         System.out.println(c +" "+d);
+	     }
+	     
+	 
+}

@@ -1,0 +1,78 @@
+package zohozs;
+
+interface Scientist
+{
+	public void kalai();
+}
+ abstract class  Solarsystem implements Scientist
+{
+	public abstract void moon();
+	public abstract void stars();
+	public void pluto()
+	{
+		System.out.println("we can see  pluto only in solar system");
+	}
+	
+	
+	 
+}
+ abstract class Earth extends Solarsystem
+ {
+
+//	public void moon() {
+//		System.out.println("we can see the moon from the earth");
+//		
+//	}
+//
+//	public void stars() {
+//		System.out.println("we can see the stars from the earth");
+//		
+//		
+//	}
+		/*
+		 * public void pluto() {
+		 * 
+		 * System.out.println("we cannot  see  pluto only from earth"); }
+		 */
+	public abstract void asteroid();
+	
+	 
+ }
+public class AbstractionDemo  extends Solarsystem{
+
+	public static void main(String[] args) {
+		AbstractionDemo earth=new AbstractionDemo();
+		earth.moon();
+		earth.pluto();
+		earth.stars();
+		earth.kalai();
+	//	earth.asteroid();
+
+	}
+
+//	@Override
+//	public void asteroid() {
+//		System.out.println("asteroids");
+//		
+//	}
+
+	@Override
+	public void moon() {
+		System.out.println("moon");
+		
+	}
+
+	@Override
+	public void stars() {
+		System.out.println("stars");
+		
+	}
+
+	@Override
+	public void kalai() {
+		System.out.println("kalai is a scientist who discovered the solar system");
+		// TODO Auto-generated method stub
+		
+	}
+
+}

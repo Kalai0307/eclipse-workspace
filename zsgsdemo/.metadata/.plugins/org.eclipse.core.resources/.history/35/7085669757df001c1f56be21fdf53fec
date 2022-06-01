@@ -1,0 +1,10 @@
+package VidhinSanAssign;
+
+public class EmployeeDetailsPojo {
+
+	private String employeeName;
+	private String employeeId;
+	private  int employeeAge;
+	private  String employeeMailId;
+	
+}

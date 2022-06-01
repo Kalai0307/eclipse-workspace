@@ -1,0 +1,36 @@
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+
+public class SetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//linkedhashset
+		//hash set
+		//tree set
+		
+		LinkedHashSet<Object> ll= new LinkedHashSet<>();
+		ll.add(1);//hetro
+		ll.add(2);// no duplicate
+		ll.add(3);// order maintain panum
+		ll.add(2);
+		ll.add("kalai");
+		System.out.println("linked hash set"+ll);
+		
+		// lined hash map
+		LinkedHashMap<Integer, String> lm=new LinkedHashMap<>();
+				lm.put(1,"kalai");
+		lm.put(1,"kalai");//no duplicate
+		lm.put(2,"vani");//order maintain panum
+		lm.put(1,"brindha");
+		System.out.println(lm);
+		System.out.println(lm.get(2));
+		System.out.println(lm.containsValue("vani"));
+		
+		
+		
+
+	}
+
+}

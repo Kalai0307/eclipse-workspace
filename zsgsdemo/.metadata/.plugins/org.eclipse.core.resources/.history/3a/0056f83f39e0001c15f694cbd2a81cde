@@ -1,0 +1,17 @@
+package zohozs;
+
+ abstract class  Solarsystem
+{
+	public abstract void moon();
+	public abstract void stars();
+	
+	 
+}
+public class AbstractionDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package intefa;
+class form
+{
+	int num;
+	String name;
+	int weight;
+	public void filling()
+	{
+		System.out.println("my number"+num);
+		System.out.println("my name is "+name);
+		System.out.println("my weight is  "+weight);
+	}
+	
+	
+}
+
+public class stringDemo {
+	
+	public static void main(String args [])
+	{
+	form obj= new form();
+	obj.num=10;
+	
+	
+	}
+
+}

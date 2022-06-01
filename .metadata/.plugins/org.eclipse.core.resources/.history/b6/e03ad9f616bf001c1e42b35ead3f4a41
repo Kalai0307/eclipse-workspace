@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package intefa;
+
+/**
+ * @author dell1
+ *
+ */
+interface abc
+{
+	 void show();
+	
+	}
+class star implements abc
+{
+	public void show()
+	{
+	System.out.println("hellow");
+	}
+	
+
+
+}
+public interface interfaceDemo {
+	public static void main( String args[])
+
+	{
+		
+		star obj=new star();
+		obj.show();
+		
+		
+	}
+
+}
+

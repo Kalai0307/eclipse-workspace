@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+  
+public class Hashmap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hashmap <Integer,String,Integer,Integer>hm=new Hashmap<>();
+		
+		hm.put(10, 25,"kalai",258);
+		 System.out.println(hm);
+		
+
+	
+
+}
+}

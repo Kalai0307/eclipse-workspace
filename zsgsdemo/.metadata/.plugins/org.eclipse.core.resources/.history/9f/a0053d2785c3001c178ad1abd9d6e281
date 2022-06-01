@@ -1,0 +1,19 @@
+package zsgsdemo;
+
+import java.util.ArrayList;
+
+
+public class ListTrial {
+
+	public static void main(String[] args) {
+		//Scanner scan=new Scanner(System.in);
+		ArrayList<Integer> a=new ArrayList<Integer>(10);
+		for(int i :a)
+		{
+			a.add(i);
+			System.out.println(a);
+		}
+	
+	}
+//scan.close();
+}

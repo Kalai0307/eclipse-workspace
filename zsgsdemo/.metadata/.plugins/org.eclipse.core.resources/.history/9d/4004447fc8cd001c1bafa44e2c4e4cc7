@@ -1,0 +1,68 @@
+package zsgsdemo;
+
+import java.util.Scanner;
+
+class StudentDetails
+{
+	String name;
+	int age;
+	String Gender;
+	int regno;
+	private int phno;
+	
+private	String email;
+
+public int getPhno() {
+	return phno;
+}
+
+public void setPhno(int phno) {
+	this.phno = phno;
+}
+
+public String getEmail() {
+	return email;
+}
+
+public void setEmail(String email) {
+	this.email = email;
+}
+	
+	
+	
+	
+}
+
+
+public class PojoDemo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n= sc.nextInt();
+		StudentDetails obj =new StudentDetails ();
+		for(int i=0;i<n;i++)
+		{
+			
+	       
+	        System.out.print("Enter Name: ");
+	        obj.name =sc.next();
+	        System.out.print("Enter age: ");
+	        obj.age=sc.nextInt();
+	          System.out.print("Enter Roll Number: ");
+	         obj. regno=sc.nextInt();	
+	         System.out.print("Enter phone Number: ");
+	         obj.setPhno(sc.nextInt());
+	         System.out.print("Enter gender: ");
+	         obj.Gender=sc.next();
+	   //      System.out.print("Enter Roll Number: ");
+	         
+			
+			
+		}
+		
+		
+	
+
+	}
+
+}

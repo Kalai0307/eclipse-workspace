@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package string.com;
+
+/**
+ * @author dell1
+ *
+ */
+public class DemoString {
+	public static void main(String[] args) {
+	
+	StringBuffer sbf= new StringBuffer();
+	sbf.append("nm");
+	}
+
+}

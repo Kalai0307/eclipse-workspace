@@ -1,0 +1,23 @@
+import java.util.LinkedHashSet;
+
+public class SetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//linkedhashset
+		//hash set
+		//tree set
+		
+		LinkedHashSet<Object> ll= new LinkedHashSet<>();
+		ll.add(1);
+		ll.add(2);
+		ll.add(3);
+		ll.add(2);
+		ll.add("kalai");
+		System.out.println("linked hash set"+ll);
+		
+
+	}
+
+}

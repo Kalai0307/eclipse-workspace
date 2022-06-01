@@ -1,0 +1,11 @@
+package azsgsdemo
+import java.util.Scanner;
+
+public class RevSub_3 {
+	
+	Scanner scan =new Scanner(System.in);
+	int n = scan.nextInt();
+	System.out.println("enter an num");
+	
+
+}

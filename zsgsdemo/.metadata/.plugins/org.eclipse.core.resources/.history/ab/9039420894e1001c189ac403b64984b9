@@ -1,0 +1,29 @@
+package VidhinSanAssign;
+
+public class Electronics {
+
+	public static void main(String[] args) {
+		int keyboards[]= {40,50,60};
+		int drives[]= {5,8,12};
+		int sum=0,max=0;
+		for(int i=0;i<keyboards.length;i++)
+		{
+			for(int j=0;j<drives.length;j++)
+			{
+				sum=keyboards[i]+drives[j];
+			}
+			if(sum>max&&sum<60)
+			{
+				max=sum;
+			}sum=0;
+		}
+		if(sum<60)
+		{
+			System.out.println(sum);
+		}
+		else
+			System.out.println(-1);
+
+	}
+
+}

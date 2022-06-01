@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.security.Timestamp"/>
+    <fullyQualifiedTypeName name="java.time.Instant"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="Assign.EnterDetails"/>
+    <fullyQualifiedTypeName name="Assign.StudentData"/>
+    <fullyQualifiedTypeName name="Assign.StudentDetails"/>
+    <fullyQualifiedTypeName name="Assign123.StudentArrayPojo"/>
+    <fullyQualifiedTypeName name="javax.imageio.plugins.tiff.ExifParentTIFFTagSet"/>
+    <fullyQualifiedTypeName name="zohozs.Parent"/>
+    <fullyQualifiedTypeName name="zsgsdemo.TestDemo"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="java.awt.image.RescaleOp"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="VidhinSanAssign.calling"/>
+    <fullyQualifiedTypeName name="HashMap.StudentsPojo"/>
+    <fullyQualifiedTypeName name="Elephant"/>
+    <fullyQualifiedTypeName name="VidhinSanAssign.TouristPlace.Mahabalipuram"/>
+    <fullyQualifiedTypeName name="VidhinSanAssign.NestedTouristDemo"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="zohozs.AbstractionDemo"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="zohozs.Solarsystem"/>
+    <fullyQualifiedTypeName name="zohozs.Earth"/>
+    <fullyQualifiedTypeName name="zohozs.Scientist"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.sql.Array"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

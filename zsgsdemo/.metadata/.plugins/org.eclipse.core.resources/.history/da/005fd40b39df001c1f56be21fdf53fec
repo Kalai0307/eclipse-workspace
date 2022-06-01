@@ -1,0 +1,14 @@
+package com.zoho.bus;
+
+public class NestedouterclaassAccess {
+
+	public static void main(String[] args) {
+		
+	NestedClassDemo nsd = new NestedClassDemo();
+		nsd.nonStaticMethod();
+		//InnerClass inner = nsd.new InnerClass();
+
+		
+	}
+
+}

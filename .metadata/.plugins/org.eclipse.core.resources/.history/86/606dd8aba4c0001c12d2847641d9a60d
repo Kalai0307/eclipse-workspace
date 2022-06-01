@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package string.com;
+
+/**
+ * @author dell1
+ *
+ */
+public class DemoString {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

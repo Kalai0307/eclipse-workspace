@@ -1,0 +1,20 @@
+package com.zoho.bus;
+
+public class NestedClassDemo {
+
+	public static void main(String[] args) {
+		
+		NestedClassDemo nsd= new NestedClassDemo();
+		InnerClss inner=  nsd.new InnerClss();	
+		inner.innerClassMethod();
+	}
+
+	class InnerClss{
+		public void innerClassMethod()
+		{
+			System.out.println("InnerclassMethod");
+		}
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package zsgsdemo;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class DateTrial {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		String s= sc.nextLine();
+		DateFormat in = new SimpleDateFormat("hh:mm:ssaa");
+		DateFormat out = new SimpleDateFormat("HH.mm.ss");
+		Date n;
+		try {
+			n=in.parse(s);
+			System.out.println(out);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+		
+		
+		sc.close();
+		
+
+	}
+
+}

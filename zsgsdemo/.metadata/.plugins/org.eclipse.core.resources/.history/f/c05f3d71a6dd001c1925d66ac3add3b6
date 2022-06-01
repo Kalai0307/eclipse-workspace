@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class AbstractDemo {
+
+	public static void main(String[] args) {
+	   int n=123;
+		int lastdigit=0,count=0;
+	    int number=n;
+	    while(n>0)
+	    {
+	      lastdigit =n%10;
+	      if(number%lastdigit==0)
+	      {
+	        count++;
+	      }
+	      n= n/10;
+	    }
+    System.out.println(n);
+	}
+}
+

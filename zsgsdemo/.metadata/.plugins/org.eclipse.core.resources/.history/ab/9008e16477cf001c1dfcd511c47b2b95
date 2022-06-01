@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+
+public class EmployeeDetailaArray {
+
+	public static void main(String[] args) {
+		ArrayList<Object> employee=new ArrayList<>();
+		System.out.println("enter name");
+		employee.add("kalai");
+		System.out.println("enter age");
+		employee.add(25);
+		System.out.println("enter phno");
+		employee.add(948803458);
+		for(Object i:employee)
+		{
+			System.out.println(i);
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package string.com;
+
+import java.util.Scanner;
+
+/**
+ * @author dell1
+ *
+ */
+ public class ArrayDw
+ {
+	
+	public static void main(String[] args) {
+	
+		Scanner scan =new Scanner (System.in);
+		
+		System.out.println("enter number of element");
+		int n= scan.nextInt();
+		int a[]=new int [n];
+		int sum=0;
+		for(int i=0;i<n;i++)
+		{
+			a[i]=scan.nextInt();
+			sum=a[i]+sum;
+		}
+		
+		System.out.println(sum);
+}
+}

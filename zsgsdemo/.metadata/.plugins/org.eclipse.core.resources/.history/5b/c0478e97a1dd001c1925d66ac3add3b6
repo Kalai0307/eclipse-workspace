@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class AbstractDemo {
+
+	public static void main(String[] args) {
+	    String s="abcac";
+	    int n=10,couu=0;
+		ArrayList<Character> a= new ArrayList<>();
+	      int j=s.length();
+	    int p=0;
+	   for(int i=0;i<n;i++)
+	   {
+		   a.add(s.charAt(p));
+		   p++;
+		   if(p==j)
+		   {
+			   p=0;
+		   }
+	   }
+	    
+	    System.out.println(a);
+	    int count=0;
+	  char  ch = 'a';
+	    for(int o :a)
+	    {
+	      if(a.get(o).equals(a))
+	      {
+	        count++;
+	      }
+	    }
+	    System.out.println("count"+count);
+	    
+	    }
+	
+
+    
+	}
+
+

@@ -1,0 +1,13 @@
+package intefa;
+
+public class stringSPLITT {
+	public static void main(String args [])
+	{
+		String a = "micky, fall in ,loves with ,mini";
+		String[] name =a.split(",");
+		
+	System.out.println(name);
+		
+	}
+
+}

@@ -1,0 +1,44 @@
+package zsgsdemo;
+
+class Split
+{
+int n;
+
+
+public Split(int i) {
+n=i;
+}
+
+public void list()
+		{
+			for(int j=n;j<120;j++)
+			{
+				System.out.print((j+4)+" ");
+			}
+		}
+	
+
+
+}
+
+public class StudentRoll_6 {
+
+	public static void main(String[] args) {
+		
+		Split obj = new Split (101);
+		System.out.println("group1=");
+		obj.list();
+		obj.n=101;
+		System.out.println("group1=");
+		obj.list();
+		obj.n=102;
+		System.out.println("group1=");
+		obj.list();
+		obj.n=103;
+		System.out.println("group1=");		
+		obj.list();
+		obj.n=104;
+
+	}
+
+}

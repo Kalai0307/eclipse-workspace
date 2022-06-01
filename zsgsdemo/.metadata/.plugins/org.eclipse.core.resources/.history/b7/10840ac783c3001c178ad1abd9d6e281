@@ -1,0 +1,22 @@
+package zsgsdemo;
+
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class ListTrial {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		HashSet<Integer> h=new HashSet <Integer>();
+		//int[] values = new int[10];
+		for(int i :h)
+		{
+			i=scan.nextInt(i);
+			h.add(i);
+			System.out.println(i);
+		}
+		scan.close();
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package maxmin.com;
+
+public class Maxmin {
+
+		public static void mian(String []args)
+		{
+			int a[]= {1,2,3,4,5};
+			int sum=0;
+			int temp=0;
+			for(int i=0;i<a.length;i++)
+			{
+				  for(int j=0;j<a.length;j++)
+				  {
+					 sum=a[j]+sum; 
+				  }
+				  sum=sum-a[i];
+				  if(sum>temp)
+				  {
+					  temp=sum;
+				  }
+				  
+			}
+			System.out.println(temp);
+		}
+	}

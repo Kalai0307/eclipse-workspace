@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package intefa;
+
+/**
+ * @author dell1
+ *
+ */
+class rectangle
+{
+	int l,b;
+	public rectangle(int i, int j) {
+		this.l=i;
+		this.b=j;
+	}
+	
+	public void area(int l,int b)
+	{
+		System.out.println(l*b);
+	}
+	
+}
+
+public interface interfaceDemo {
+	public static void main( String args[])
+
+	{
+		rectangle obj =new rectangle(5,8);
+		
+		
+	}
+
+}
+

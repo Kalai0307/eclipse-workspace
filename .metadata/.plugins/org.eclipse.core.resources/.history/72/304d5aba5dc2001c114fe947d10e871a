@@ -1,0 +1,31 @@
+package zsgsdemo;
+class Pattern
+{
+	public void print(String n)
+	{
+		for(int i =0;i<n.length();i++)
+		{
+			for(int j=0;j<n.length();j++)
+			{
+				if(i==j&&(i+j)==n.length()-1)
+				{
+					System.out.println("*");
+				}
+				
+			}
+			System.out.println("\n");
+		}
+	}
+}
+public class Xpattern_7 {
+
+	public static void main(String[] args) {
+		
+		String n="12345";
+	Pattern obj=new Pattern();
+	obj.print(n);
+		
+
+	}
+
+}

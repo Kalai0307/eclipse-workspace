@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.util.Map.Entry;
+  
+public class Hashmap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 HashMap<Integer,String> hm=new HashMap<Integer,String>();//Creating HashMap    
+		   hm.put(1,"Mango");  //Put elements in Map  
+		   hm.put(2,"Apple");    
+		   hm.put(3,"Banana");   
+		//   map.put(4,"Grapes");
+		 //  map.put(5, "kalai");
+		   for(Entry<Integer, String>  m:hm.entrySet() )
+		   {
+			   System.out.println(m.getValue()+" "+m.hashCode()+" "+m.getKey()+m.toString());
+		   }
+		   
+
+	
+
+}
+}

@@ -1,0 +1,49 @@
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+
+public class SetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//linkedhashset
+		//hash set
+		//tree set
+		
+		LinkedHashSet<Object> ll= new LinkedHashSet<>();
+		ll.add(1);//hetro
+		ll.add(2);// no duplicate
+		ll.add(3);// order maintain panum
+		ll.add(2);
+		ll.add("kalai");
+		System.out.println("linked hash set"+ll);
+		
+		// lined hash map
+		LinkedHashMap<Integer, String> lm=new LinkedHashMap<>();
+		LinkedHashMap<Integer, String> lm1=new LinkedHashMap<>();
+		lm1.put(1,"kalai");
+		lm.put(1,"kalai");
+		lm.put(1,"kalai");//no duplicate
+		lm.put(2,"vani");//order maintain panum
+		lm.put(1,"brindha");
+		System.out.println(lm);
+		System.out.println(lm.get(2));//vani
+		System.out.println(lm.containsValue("vani"));//true
+		System.out.println(lm.equals(lm1));//false
+		
+		System.out.println("======================================================================================");
+		
+		System.out.println("TREE SET AND TREE MAP");
+		// sorting
+		TreeSet<String> ts=  new TreeSet<String>();
+		ts.add("kalai");
+		ts.add("vani");
+		ts.add("mini");
+		ts.add("dulcy");
+		System.out.println("tree set"+ts);
+		System.out.println(ts.first());
+
+	}
+
+}

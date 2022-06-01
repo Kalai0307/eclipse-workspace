@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package string.com;
+
+/**
+ * @author dell1
+ *
+ */
+public class DemoString {
+	public static void main(String[] args) {
+	
+		String s ="kalai";
+		s= "vani";
+		String s1=new String("vani123");
+		//s1.append();
+		StringBuffer sbf=new StringBuffer();
+	sbf.append("123");
+		System.out.println(sbf);
+		
+		
+		
+	}
+
+}

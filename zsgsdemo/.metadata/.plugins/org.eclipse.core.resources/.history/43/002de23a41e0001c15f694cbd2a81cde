@@ -1,0 +1,19 @@
+package VidhinSanAssign;
+
+import java.util.ArrayList;
+
+public class Flames {
+
+	public static void main(String[] args) {
+		String s1="kalai";
+		String s2="vani";
+		int TotalLength=s1.length()+s2.length();
+		System.out.println("totallength = "+TotalLength);
+		ArrayList<String> a= new ArrayList<>();
+		a.add(s1);
+		a.add(s2);
+		System.out.println(a);
+
+	}
+
+}

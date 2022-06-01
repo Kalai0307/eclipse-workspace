@@ -1,0 +1,43 @@
+package k;
+
+
+
+
+class problem
+{
+	int i,j,k;
+	
+public void  add()
+{
+	 k=i+j;
+}
+}
+class problmB extends problem
+{	
+	int i,j,k;
+public  void sub ()
+{
+	
+	k=i-j;
+	}
+
+
+}
+public class inheri {
+	public static void main(String []args)
+{
+   problmB a=new problmB();
+   a.i=5;
+   a.j=6;
+  
+   System.out.println( a.add());
+   
+   
+		
+		
+		
+		
+		
+		
+		}
+}

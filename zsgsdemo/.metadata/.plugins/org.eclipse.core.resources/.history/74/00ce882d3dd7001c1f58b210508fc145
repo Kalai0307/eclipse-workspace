@@ -1,0 +1,24 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class HshMapDemo {
+
+	public static void main(String[] args) {
+	HashMap<Integer,String> hm= new HashMap<Integer,String>(); 
+	hm.put(10,"kalai");
+	hm.put(2,"vani");
+	hm.put(100,"Amit");    
+    hm.put(101,"Vijay");    
+    //hm.put(101,"Rahul");  
+  //   hm.compute(1,"ghj");
+    hm.remove(10, "kalai");
+    hm.remove("vani");
+	for(Entry<Integer, String> m:hm.entrySet())
+	{
+		System.out.println(m.getKey()+" "+m.getValue());
+	}
+
+	}
+
+}

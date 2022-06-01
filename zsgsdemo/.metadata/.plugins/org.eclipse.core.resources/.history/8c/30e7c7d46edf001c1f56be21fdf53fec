@@ -1,0 +1,20 @@
+package VidhinSanAssign;
+
+public class TouristPlace {
+
+	public static void main(String[] args) {
+	System.out.println("happy journey");
+	TouristPlace tp= new TouristPlace();
+     Mahabalipuram mp= tp.new Mahabalipuram();
+     mp.sculpture();
+	
+	}
+	class Mahabalipuram
+	{
+		public void sculpture()
+		{
+			System.out.println("Mahabalipuram sculptures are very beaultiful");
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package string.com;
+
+/**
+ * @author dell1
+ *
+ */
+public class DemoString {
+	public static void main(String[] args) {
+	
+		String s ="kalai";
+		System.out.println(s+"hello");
+	}
+
+}

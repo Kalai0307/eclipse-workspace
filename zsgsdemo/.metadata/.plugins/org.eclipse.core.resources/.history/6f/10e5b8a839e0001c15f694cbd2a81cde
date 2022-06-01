@@ -1,0 +1,49 @@
+package zohozs;
+
+ abstract class  Solarsystem
+{
+	public abstract void moon();
+	public abstract void stars();
+	public void pluto()
+	{
+		System.out.println("we can see  pluto only from solar system");
+	}
+	
+	
+	 
+}
+ abstract class Earth extends Solarsystem
+ {
+
+	@Override
+	public void moon() {
+		System.out.println("we can see the moon from the earth");
+		
+	}
+
+	@Override
+	public void stars() {
+		System.out.println("we can see the stars from the earth");
+		
+		
+	}
+	public void pluto()
+	{
+		super.pluto();
+		System.out.println("we cannot  see  pluto only from earth");
+	}
+	public abstract void asteroid();
+	
+	 
+ }
+public class AbstractionDemo {
+
+	public static void main(String[] args) {
+		Earth earth=new Earth();
+		earth.moon();
+		earth.pluto();
+		earth.stars();
+
+	}
+
+}

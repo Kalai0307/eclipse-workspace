@@ -1,0 +1,14 @@
+package VidhinSanAssign;
+
+import java.util.ArrayList;
+
+interface Employee  {
+	
+	 void AddEmployeeDetails();
+	 void PrintEmployeeDetails();
+	 void RemoveEmployeeDetails();
+	 void RetriveEmployeeDetails();
+	
+	
+
+}

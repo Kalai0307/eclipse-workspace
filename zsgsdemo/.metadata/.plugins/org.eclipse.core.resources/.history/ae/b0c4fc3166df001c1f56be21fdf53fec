@@ -1,0 +1,12 @@
+package VidhinSanAssign;
+
+interface Employee  {
+	
+	 void AddEmployeeDetails();
+	 void PrintEmployeeDetails();
+	 void RemoveEmployeeDetails();
+	 void DeleteEmployeeDetails();
+	 void RetriveEmployeeDetails();
+	
+
+}
