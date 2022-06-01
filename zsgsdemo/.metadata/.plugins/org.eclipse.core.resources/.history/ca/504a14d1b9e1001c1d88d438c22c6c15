@@ -1,0 +1,26 @@
+package VidhinSanAssign;
+
+import java.util.ArrayList;
+
+public class UtopianTree {
+
+	public static void main(String[] args) {
+		//ArrayList<Integer> a= new ArrayList<Integer>();
+	//	a.add(null);
+	    int initialHeight=1;
+	    int n=5;
+	    for(int i=1;i<=n;i++)
+	    {
+	      if(i%2!=0){
+	      initialHeight=initialHeight*2;
+	   //   a.add(initialHeight);
+	      }
+	      else{
+	        initialHeight=initialHeight+1;
+	      //  a.add(initialHeight);
+	      }
+	    }
+	    System.out.println(initialHeight);
+	}
+
+}

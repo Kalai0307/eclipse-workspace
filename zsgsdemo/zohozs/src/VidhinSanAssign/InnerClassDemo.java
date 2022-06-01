@@ -9,10 +9,7 @@ public class InnerClassDemo {
 	}
 	class InnerClass
 	{
-      public void 
-      {
-    	  
-      }
+     
 	}
 
 }
