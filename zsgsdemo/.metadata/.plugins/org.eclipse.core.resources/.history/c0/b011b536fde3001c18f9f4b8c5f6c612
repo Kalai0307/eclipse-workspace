@@ -1,0 +1,30 @@
+package assignment;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import org.w3c.dom.Entity;
+
+public class UserDetails {
+
+	public static void main(String[] args) {
+		HashMap <Long,Integer> userAccountAndPin = new HashMap<Long,Integer>();
+		userAccountAndPin.put((long) 123456789,1111);
+		userAccountAndPin.put((long) 123456787,2222);
+		userAccountAndPin.put((long) 123456786,3333);
+		userAccountAndPin.put((long) 123456785,4444);
+		userAccountAndPin.put((long) 123456784,5555);
+
+	}
+
+	public static void checkLoginUser(long accountNumber, int pinNumber) {
+		Object userAccountAndPin;
+		for( Map.Entry<Long, Integer>  m : userAccountAndPin.entrySet() )
+		{
+			
+		}
+		
+	}
+
+}

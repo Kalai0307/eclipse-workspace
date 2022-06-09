@@ -1,0 +1,55 @@
+package com.zoho.kalaiTravels;
+
+public class BusDetails {
+
+	private int noOfSeatsAvailable;
+	private String driverName;
+	private Long driverPhNo;
+	/**
+	 * @return the noOfSeatsAvailable
+	 */
+	
+	BusDetails()
+	{
+		
+	}
+
+	/**
+	 * @param totalSeatCount 
+	 * @return 
+	 */
+	public void setNoOfSeatsAvailable(int totalSeatCount) {
+	   this.noOfSeatsAvailable = noOfSeatsAvailable;
+	}
+	
+	public int getNoOfSeatsAvailable() {
+		return this.noOfSeatsAvailable;
+	}
+	/**
+	 * @return the driverName
+	 */
+	public String getDriverName() {
+		return driverName;
+	}
+	/**
+	 * @param driverName the driverName to set
+	 */
+	public void setDriverName(String driverName) {
+		this.driverName = driverName;
+	}
+	/**
+	 * @return the driverPhNo
+	 */
+	public Long getDriverPhNo() {
+		return driverPhNo;
+	}
+	/**
+	 * @param driverPhNo the driverPhNo to set
+	 */
+	public void setDriverPhNo(Long driverPhNo) {
+		this.driverPhNo = driverPhNo;
+	}
+		
+	
+
+}

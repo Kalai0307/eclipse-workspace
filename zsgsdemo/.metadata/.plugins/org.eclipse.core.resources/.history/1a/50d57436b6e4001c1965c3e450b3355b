@@ -1,0 +1,5 @@
+package com.zoho.busreservation;
+
+public class LoginDetails {
+
+}

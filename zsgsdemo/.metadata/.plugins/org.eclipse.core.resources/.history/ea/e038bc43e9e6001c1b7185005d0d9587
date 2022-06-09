@@ -1,0 +1,62 @@
+
+
+//import javax.imageio.plugins.tiff.ExifParentTIFFTagSet;
+
+interface Parent
+{
+	  void print();
+	
+	void dispaly();
+	
+	
+}
+
+
+class Child implements Parent
+{   
+	public void print()
+	{
+		System.out.println("PRINTING ");
+	}
+	public void display()
+	{
+		System.out.println("DISPLAYING CHILD METHOD");
+	}
+	@Override
+	public void dispaly() {
+		System.out.println("DISPLAYING PARENT METHOD");
+		
+	}
+	
+}
+
+public class InterfaceDemo {
+
+	public static void main(String[] args) {
+		Child c= new Child();
+		c.print();
+		
+		c.dispaly();
+		Parent p= new Parent() {
+
+			
+			public void print() {
+				System.out.println("PRINTING ANNONYMOUS PRINT METHOD");
+				
+			
+			}
+
+			public void dispaly() {
+				System.out.println("PRINTING ANNONYMOUS DISPLAY METHOD");
+				
+			}
+			
+		};
+			
+		p.print();
+		p.dispaly();
+	
+	
+	}
+
+}

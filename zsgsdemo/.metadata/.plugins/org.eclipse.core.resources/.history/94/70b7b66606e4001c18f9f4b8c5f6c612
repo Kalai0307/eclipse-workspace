@@ -1,0 +1,92 @@
+package com.zoho.bank;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
+public class LoginPage {
+	//Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		BankDetailsPojo details=new BankDetailsPojo();
+		System.out.println("WELCOME TO ZOHO BANK");
+		
+		System.out.println("To create new Account Press 1");
+		System.out.println("For Login Press 2");
+		byte choice = sc.nextByte();
+		if(choice==1)
+		{
+			
+		}
+		else if(choice==2)
+		{
+			HashMap <Integer,Integer> userAccountAndPin = new HashMap<Integer,Integer>();
+			userAccountAndPin.put(1010,1111);
+			userAccountAndPin.put(2020,2222);
+			userAccountAndPin.put(3030,3333);
+			userAccountAndPin.put(4040,4444);
+			userAccountAndPin.put(5050,5555);
+			System.out.println("Enter your Account Number");
+			Integer accountNumber= sc.nextInt();
+			System.out.println("Enter your Pin Number");
+			Integer pinNumber = sc.nextInt();
+			details.setAccountNumber(accountNumber);
+			System.out.println("account"+accountNumber);
+			details.setPinNumber1(pinNumber);
+			for( Entry<Integer, Integer>  m : userAccountAndPin.entrySet())
+			{
+// 				System.out.println(accountNumber);
+//				System.out.println(pinNumber);
+//                System.out.println(m.getKey());
+//                System.out.println(m.getValue());
+				if(m.getKey().equals(details) && m.getValue().equals(details))
+				{
+				  chooseOption(accountNumber);
+				  break;
+				}
+				
+				
+			}
+			
+				System.out.println("please enter correct account number and pin number");
+				
+			
+			
+
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+	public static void chooseOption(int accountNumber) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("for balance checking press 1");
+		  System.out.println("for deposit amount  press 2");
+		  System.out.println("for withdraw amount press 3 ");
+		  int option = sc.nextInt();
+		  System.out.println("Please enter a choice");
+		  switch(option)
+		  {
+		  case 1:
+			  
+		  {
+			 AllProcess.balanceCheck(accountNumber);
+		  }
+		  
+		  }
+		
+	}
+
+	
+
+		
+	
+
+}

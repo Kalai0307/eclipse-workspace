@@ -1,0 +1,41 @@
+package com.zoho.kalaiTravels;
+
+import java.util.ArrayList;
+
+public class SeatReservation {
+	
+	public static int seatAvailabilityChecking(int seat, ArrayList<Integer> seat2, int noOfSeatsAvailable) {
+		System.out.println(seat);
+		
+		BusDetails busdetails= new BusDetails();
+		
+		for(Integer i: seat2)
+		{
+			System.out.println("seat"+seat2.get(i));
+			System.out.println(" abc"+seat);
+			
+			if(seat2.get(i).equals(seat))
+			{
+				if(!seat2.get(i).equals(0))
+				{
+					seat2.set(i, 0);
+					System.out.println(" your seat is booked");
+		   			 noOfSeatsAvailable--;
+		   			 System.out.println(noOfSeatsAvailable);
+		   			
+		   			 busdetails.setNoOfSeatsAvailable(noOfSeatsAvailable);
+		   			 busdetails.getNoOfSeatsAvailable();
+		   			 break;
+				
+		  	}
+			
+		}
+		}
+		return noOfSeatsAvailable;
+		
+		
+	}
+	
+}
+
+

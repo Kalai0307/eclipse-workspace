@@ -1,0 +1,10 @@
+package com.zoho.atm;
+
+public class LoginPortal2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

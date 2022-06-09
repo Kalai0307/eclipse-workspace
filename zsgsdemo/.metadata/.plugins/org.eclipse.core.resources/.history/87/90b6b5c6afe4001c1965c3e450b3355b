@@ -1,0 +1,24 @@
+package VidhinSanAssign;
+
+import java.util.ArrayList;
+
+public class PallindromeIndex {
+
+	public static void main(String[] args) {
+		String s="aaab";
+		ArrayList<Integer> a= new ArrayList<>();
+		int count=0,max=0;;
+		for(int i=0;i<s.length();i++)
+		{
+			for(int j=0;j<s.length();j++)
+			{
+				if(s.charAt(i)==s.charAt(j));
+				count++;
+			}
+			a.add(count);
+			if()
+		}
+
+	}
+
+}

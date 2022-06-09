@@ -1,0 +1,10 @@
+package com.zoho.bank;
+
+public class AllProcess {
+	
+	void chooseOption()
+	{
+		
+	}
+
+}

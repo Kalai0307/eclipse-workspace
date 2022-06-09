@@ -1,0 +1,18 @@
+package zsgsdemo;
+
+public class Demo1
+{
+
+	public static void main(String[] args) {
+		int a=5;
+		int b=10;
+		checking(a,b);
+	}
+
+	public static boolean checking(int a, int b) {
+		return a>b?true:false;
+		
+		
+	}
+
+}

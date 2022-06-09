@@ -1,0 +1,29 @@
+package com.zoho.busreservation;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class LoginPortal  {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("WELCOME TO ZOHO TRAVELS");
+		
+		HashMap<String,String> hm= new HashMap<String,String> ();
+		
+		hm.put("lbmbj", "kalai");
+		hm.put("wboj", "vani");
+		hm.put("ufoz","teny");
+		
+		
+		System.out.println("please enter your user name and password");
+		String name=sc.nextLine();
+		System.out.println("User Name :"+name);
+		String password=sc.nextLine();
+		System.out.println("User password :"+password);
+		
+				
+
+	}
+
+}

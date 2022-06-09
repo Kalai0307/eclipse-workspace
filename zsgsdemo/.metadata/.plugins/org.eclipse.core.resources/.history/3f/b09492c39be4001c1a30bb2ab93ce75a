@@ -1,0 +1,89 @@
+package com.zoho.bank;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
+public class AtmLogin extends BankFacility {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		BankDetailsPojo details = new BankDetailsPojo();
+		System.out.println("WELCOME TO ZOHO BANK");
+		System.out.println("Press 1 to enter your account number and pin number");
+		byte choice = sc.nextByte();
+		if (choice == 1) {
+			HashMap<Integer, Integer> userAccountAndPin = new HashMap<Integer, Integer>();
+			userAccountAndPin.put(1010, 1111);
+			userAccountAndPin.put(2020, 2222);
+			userAccountAndPin.put(3030, 3333);
+			userAccountAndPin.put(4040, 4444);
+			userAccountAndPin.put(5050, 5555);
+			System.out.println("Enter your Account Number");
+			Integer accountNumber = sc.nextInt();
+			System.out.println("Enter your Pin Number");
+			Integer pinNumber = sc.nextInt();
+			details.setAccountNumber(accountNumber);
+			System.out.println("your account" + accountNumber + " \nyour pin number" + pinNumber);
+
+			details.setPinNumber1(pinNumber);
+			for (Entry<Integer, Integer> m : userAccountAndPin.entrySet()) {
+
+				if (m.getKey().equals(accountNumber) && m.getValue().equals(pinNumber)) {
+					chooseOption(accountNumber);
+					break;
+				}
+
+			}
+
+			System.out.println("please enter correct account number and pin number");
+
+		}
+
+	}
+
+	public static void chooseOption(int accountNumber) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Please enter a choice");
+		while (true) {
+			System.out.println("=================================");
+			System.out.println("To  check balance press 1");
+			System.out.println("To deposit amount  press 2");
+			System.out.println("To withdraw amount press 3 ");
+			System.out.println("To exit press 4");
+			System.out.println("=================================");
+			int option = sc.nextInt();
+			switch (option) {
+			case 1:
+
+				BankFacility.balanceCheck(accountNumber);
+				System.out.println("your balance is " + details.getBalance());
+				break;
+
+			case 2:
+
+				System.out.println("enter the amount to  deposited");
+				int amount = sc.nextInt();
+				BankFacility.depositAmount(accountNumber, amount);
+				break;
+
+			case 3:
+
+				System.out.println("enter the amount to  withdrawn");
+				int withdrawnAmount = sc.nextInt();
+
+				BankFacility.amountWithdrawn( withdrawnAmount);
+				break;
+			case 4:
+				System.out.println("THANKS FOR USING ZOHO BANK");
+               System.exit(0);
+               
+			}
+
+		}
+
+	}
+
+	}

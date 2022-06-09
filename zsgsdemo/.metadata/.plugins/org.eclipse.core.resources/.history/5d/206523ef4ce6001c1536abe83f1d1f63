@@ -1,0 +1,12 @@
+package VidhinSanAssign;
+
+public class EnumDemo {
+
+	public static void main(String[] args) {
+		
+    int a[]= new int [10];
+    int a[]= new int [20];
+    
+	}
+
+}

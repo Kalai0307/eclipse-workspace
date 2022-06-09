@@ -1,0 +1,18 @@
+package com.zoho.bank;
+
+import java.util.Scanner;
+
+import com.zoho.atm.BankDetails;
+
+public class LoginPage {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		BankTransactions detals=  new BankTransactions();
+		System.out.println("WELCOME TO ZOHO ATM");
+        
+	}
+
+}

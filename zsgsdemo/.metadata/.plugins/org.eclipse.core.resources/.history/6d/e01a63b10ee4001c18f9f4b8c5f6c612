@@ -1,0 +1,64 @@
+package com.zoho.bank;
+
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+public class AllProcess {
+	static BankDetailsPojo details=new BankDetailsPojo();
+	 public static void main(String args[])
+	 
+	 {
+		 
+	    balanceCheck(0);
+	   
+		//depositBalance(int accountNumber);
+	 }
+
+
+
+	public static int balanceCheck(int accountNumber) {
+		HashMap <Integer,Integer> balance = new HashMap<Integer,Integer>();
+
+		
+		balance.put( 1010,1111);
+		balance.put(2020,2222);
+		balance.put(3030,3333);
+		balance.put(4040,4444);
+		balance.put(5050,5555);
+		int accountBalance =0 ;
+		for( Entry<Integer, Integer>  m : balance.entrySet()) 
+		{
+			
+			if(m.getKey()==accountNumber)
+			{ 
+				 accountBalance = m.getValue();
+				
+				break;
+			}
+		}
+		details.setBalance(accountBalance);
+		return accountBalance;
+		
+		
+		
+	}
+
+
+
+	public static void depositAmount(int accountNumber, int amount) {
+		System.out.println("your amount credited to your account");
+		int balance = amount+details.getBalance();
+		System.out.println("your balance is "+balance);
+		
+		
+		
+	}
+
+
+	
+	 
+	 
+
+}

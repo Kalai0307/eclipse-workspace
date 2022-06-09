@@ -1,0 +1,36 @@
+package com.zoho.bank;
+
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.Map.Entry;
+
+import com.zoho.atm.BankDetails;
+import com.zoho.atm.BankFacilities;
+
+public class LoginPage {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		BankTransactions detals=  new BankTransactions();
+		System.out.println("WELCOME TO ZOHO ATM");
+		while(true)
+		{
+			System.out.println("PRESS 1 : CREATE ACCOUNT");
+			System.out.println("PRESS 2: ENTER YOUR ACCOUNT AND PIN NUMBER");
+		byte choice = sc.nextByte();
+		switch(choice){
+		case 1:
+			Transaction t= new Transaction();
+			 t.createAccount();
+			
+			
+			break;
+		case 2:
+		
+		}}
+
+	}
+
+}

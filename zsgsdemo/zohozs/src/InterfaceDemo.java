@@ -1,46 +1,30 @@
 
 
-//import javax.imageio.plugins.tiff.ExifParentTIFFTagSet;
+
 
 interface Parent
 {
 	  void print();
 	
-	void anau();
+	void dispaly();
 	
 	
-}
-interface Stepparent 
-{
-void printkalai();
-	
-	void anaukalai();
 }
 
-class Child implements Parent,Stepparent
+
+class Child implements Parent
 {   
 	public void print()
 	{
-		System.out.println("child");
+		System.out.println("PRINTING  ");
 	}
-	public void anau()
-	{
-		System.out.println("zsdf");
-	}
-	public void van()
-	{
-		System.out.println("van");
-	}
+
 	@Override
-	public void printkalai() {
-		System.out.println("pkalai");
+	public void dispaly() {
+		System.out.println("DISPLAYING ");
 		
 	}
-	@Override
-	public void anaukalai() {
-	System.out.println("akalai");
-		
-	}
+	
 }
 
 public class InterfaceDemo {
@@ -48,26 +32,452 @@ public class InterfaceDemo {
 	public static void main(String[] args) {
 		Child c= new Child();
 		c.print();
-		c.anau();
-		c.van();
-		c.anaukalai();
+		
+		c.dispaly();
 		Parent p= new Parent() {
 
-			@Override
+			
 			public void print() {
-				System.out.println("kalai");
+				System.out.println("PRINTING ANNONYMOUS PRINT METHOD");
 				
+			
 			}
 
-			@Override
-			public void anau() {
-				// TODO Auto-generated method stub
+			public void dispaly() {
+				System.out.println("PRINTING ANNONYMOUS DISPLAY METHOD");
 				
 			}
 			
 		};
 			
 		p.print();
+		p.dispaly(); 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
 	
 	}

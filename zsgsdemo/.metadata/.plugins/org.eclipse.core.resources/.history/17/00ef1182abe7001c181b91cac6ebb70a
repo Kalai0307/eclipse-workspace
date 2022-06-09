@@ -1,0 +1,21 @@
+package com.zoho.bank;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Transaction {
+	public static void main(String[] args) {
+		 BankTransactions trans= new BankTransactions();
+		 HashMap<Integer,BankTransactions> hm = new  HashMap<Integer,BankTransactions>();
+		 
+		 		
+		 
+		 
+		 
+		 
+		 
+			
+			
+			
+
+	}
+}

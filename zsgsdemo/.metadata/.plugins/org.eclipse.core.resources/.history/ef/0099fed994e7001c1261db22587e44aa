@@ -1,0 +1,48 @@
+package com.zoho.dataAssignment;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+interface ShowDate {
+	void showYesDate();
+
+}
+
+class YesterdayDate implements ShowDate
+{
+	
+	public void showYesDate() {
+	
+		 
+		
+	}
+}
+public class Main  {
+
+
+	
+	
+	public static void main(String[] args) {
+		  
+       
+		
+		   YesterdayDate y= new YesterdayDate();
+		   y.showYesDate();
+		  
+		   
+		   ShowDate date = new ShowDate()
+			{
+
+		     public void showYesDate()
+		     {
+		    	 String date="09/06/2022";
+		    	 System.out.println(" yesterrday date:"+ date);
+		     }
+
+
+			};
+			date.showYesDate();
+
+	}
+
+}

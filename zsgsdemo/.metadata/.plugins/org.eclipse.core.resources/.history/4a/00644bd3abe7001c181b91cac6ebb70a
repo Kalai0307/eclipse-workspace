@@ -1,0 +1,31 @@
+package com.zoho.bank;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Transaction {
+	public static void main(String[] args) {
+		 
+		 HashMap<Integer,BankTransactions> hm = new  HashMap<Integer,BankTransactions>();
+		 BankTransactions customerDetails1= new BankTransactions(1,"kalai",10101010,1212,12);
+		 BankTransactions customerDetails2= new BankTransactions(2,"vani",20202020,2222,12);
+		 BankTransactions customerDetails3= new BankTransactions(3,"mini",30303030,3333,10);
+		 BankTransactions customerDetails4= new BankTransactions(4,"sai",40404040,4444,100);
+		
+		 hm.put(1,customerDetails1);
+		 hm.put(1,customerDetails2);
+		 hm.put(1,customerDetails3);
+		 hm.put(1,customerDetails4);
+		 
+		 
+		 		
+		 
+		 
+		 
+		 
+		 
+			
+			
+			
+
+	}
+}

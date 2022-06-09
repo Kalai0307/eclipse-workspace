@@ -1,0 +1,45 @@
+package com.zoho.stackAssignment;
+
+public class PushPopPeek {
+
+	int top;
+	int capacity;
+	String []stuName;
+	PushPopPeek()
+	{
+		top=-1;
+		capacity=10;
+		stuName= new String[capacity];
+			
+	}
+	public boolean isEmpty()
+	{
+		return top==-1;
+		 
+		
+	}
+	public boolean isfull()
+	{
+		return top==capacity-1;
+			
+	}
+	public String push(String data)
+
+	{if(isfull())
+	{
+		System.out.println("Stack is full");
+	}
+		
+		return stuName[++top]=data;
+	}
+	public String pop(String data)
+	{
+		
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

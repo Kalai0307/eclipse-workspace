@@ -1,0 +1,12 @@
+package com.zoho.kalaiTravels;
+
+import java.util.ArrayList;
+
+public class CancelTicket {
+
+	public static void cancellation(ArrayList<Integer> seat) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

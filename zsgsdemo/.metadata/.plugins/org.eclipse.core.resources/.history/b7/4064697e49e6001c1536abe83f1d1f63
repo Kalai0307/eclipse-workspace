@@ -1,0 +1,17 @@
+package HashMap;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class HashArray {
+
+	public static void main(String[] args) {
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("sunil", "sahoo");
+		ArrayList<HashMap<String, String>> arl = new ArrayList<HashMap<String, String>>();
+		arl.add(hm);// TODO Auto-generated method stub
+		System.out.println(arl);
+
+	}
+
+}

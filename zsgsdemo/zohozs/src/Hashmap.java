@@ -11,9 +11,9 @@ class Book
 	public Book(int i, String string) {
 		   id = i;    
 		    name = string;    
-		    author = string2;    
-		    publisher = string3;    
-		    quantity = j;
+  // author = String2;    
+		 //   publisher = string3;    
+	//	    quantity = j;
 	}
 
 	@Override
@@ -42,10 +42,10 @@ public class Hashmap {
 			   System.out.println(m.getValue()+" "+m.hashCode()+" "+m.getKey());
 		   }
 		   Map<Integer,Book> map=new HashMap<Integer,Book>();    
-		   Book b1=new Book(101,"Let us C","Yashwant Kanetkar","BPB",8);    
-		    Book b2=new Book(102,"Data Communications & Networking","Forouzan","Mc Graw Hill",4); 
-		    map.put(0,b1);
-            map.put(1, b2);
+		//   Book b1=new Book(101,"Let us C","Yashwant Kanetkar","BPB",8);    
+		//    Book b2=new Book(102,"Data Communications & Networking","Forouzan","Mc Graw Hill",4); 
+		//    map.put(0,b1);
+         //   map.put(1, b2);
             for(Entry<Integer, Book> k:map.entrySet())
             {
             	System.out.println(k.toString());

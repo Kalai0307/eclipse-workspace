@@ -1,0 +1,88 @@
+/**
+ * 
+ */
+package com.zoho.bus;
+
+public class PassengerDetails {
+
+	private String passengerName;
+	private long phNo;
+	private String gender;
+	private int age;
+	private String boardingPoint;
+	private String destinationPoint;
+	/**
+	 * @return the passengerName
+	 */
+	public String getPassengerName() {
+		return passengerName;
+	}
+	/**
+	 * @param passengerName the passengerName to set
+	 */
+	public void setPassengerName(String passengerName) {
+		this.passengerName = passengerName;
+	}
+	/**
+	 * @return the phNo
+	 */
+	public long getPhNo() {
+		return phNo;
+	}
+	/**
+	 * @param phNo the phNo to set
+	 */
+	public void setPhNo(long phNo) {
+		this.phNo = phNo;
+	}
+	/**
+	 * @return the gender
+	 */
+	public String getGender() {
+		return gender;
+	}
+	/**
+	 * @param gender the gender to set
+	 */
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	/**
+	 * @return the age
+	 */
+	public int getAge() {
+		return age;
+	}
+	/**
+	 * @param age the age to set
+	 */
+	public void setAge(int age) {
+		this.age = age;
+	}
+	/**
+	 * @return the boardingPoint
+	 */
+	public String getBoardingPoint() {
+		return boardingPoint;
+	}
+	/**
+	 * @param boardingPoint the boardingPoint to set
+	 */
+	public void setBoardingPoint(String boardingPoint) {
+		this.boardingPoint = boardingPoint;
+	}
+	/**
+	 * @return the destinationPoint
+	 */
+	public String getDestinationPoint() {
+		return destinationPoint;
+	}
+	/**
+	 * @param destinationPoint the destinationPoint to set
+	 */
+	public void setDestinationPoint(String destinationPoint) {
+		this.destinationPoint = destinationPoint;
+	}
+	
+	
+}

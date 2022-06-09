@@ -29,15 +29,14 @@ public class DateTrial {
 		sc.close();
 		
 
-	}
-
+	
 }
 Scanner scan =new Scanner(System.in);
 int n =scan.nextInt();
 int[] a=new int [n]; 
-for(int i=0;i<n;i++)
+for(int p=0;p<n;p++)
 {
-   a[i]=scan.nextInt();
+   a[p]=scan.nextInt();
 }
 int count=0;
 for(int i=0;i<n;i++)

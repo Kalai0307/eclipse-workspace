@@ -1,0 +1,17 @@
+package VidhinSanAssign;
+
+public class AlphaDemo {
+
+	public static void main(String[] args) {
+System.out.println("enter a string");
+   String s= "abcde";
+   String s1="";
+   for(int i=1;i<s.length();i++)
+   {
+	  s1=s1+s.charAt(i);
+   }
+   s1=s1+s.charAt(0);
+
+	}
+
+}

@@ -1,0 +1,146 @@
+package com.zoho.bank;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.Map.Entry;
+
+public class Transaction {
+	static Scanner sc = new Scanner(System.in);
+	 static BankTransactions details=  new BankTransactions();
+
+	
+		 HashMap<Integer,BankTransactions> hm = new  HashMap<Integer,BankTransactions>(){{
+			 put(1,new BankTransactions(1,"kalai",10101010,1111,12));
+			 put(2,new BankTransactions(2,"vani",20202020,2222,12));
+			 put(3,new BankTransactions(3,"mini",30303030,3333,10));
+			 put(4,new BankTransactions(4,"sai",40404040,4444,100));
+		 }};
+		
+		
+	
+	public void createAccount() {
+		int  id=hm.size()+1;
+		int accnum=50505050;
+		
+		int accountNum=accnum++;
+		
+		System.out.println("ENTER YOUR NAME");
+		String name=sc.next();
+		details.setCustomerName(name);
+		System.out.println("ENTER YOUR AADHAR NO");
+		long aadhar=sc.nextLong();
+		System.out.println("ENTER YOUR PHONE NUMBER");
+		long ph=sc.nextLong();
+		System.out.println(" your id is"+id);
+		details.setId(id);
+		details.setAccountNo(accountNum);
+		System.out.println("your account number :"+accountNum);
+		
+	    System.out.println("PLEASE GENERATE YOUR PIN NUMBER");
+	    int pin=sc.nextInt();
+	    details.setBalance(0);
+	    details.setPinNum(pin);
+	    
+	   
+	    hm.put(id, details);
+	    
+	    for (Entry<Integer, BankTransactions> m : hm.entrySet())
+	    {
+	    	BankTransactions bTrans=m.getValue();
+	    	System.out.println(m.getKey()+"       "+bTrans.toString());
+	    }
+	
+	}
+
+
+
+	public void chkAcccountAndPin(Integer accountNumber, Integer pinNumber) {
+			
+
+	    for (Entry<Integer, BankTransactions> m : hm.entrySet())
+	    {
+	    	
+	    	BankTransactions bTrans=m.getValue();
+	    	if(accountNumber.equals(bTrans.getAccountNo()))
+	    		
+	    	{
+	    		if(pinNumber.equals(bTrans.getPinNum()))
+	    		{
+	    			System.out.println(" YOUR ACCOUNT IS VERIFIED,REDIRECTING TO TRANSACTIONS....");
+	    			break;
+	    		}
+	    		else
+	    		{
+	    			System.out.println("PLEASE ENTER THE CURRENT ACCOUNT NUMBER OR PIN NUMBER!!!!");
+	    			break;
+	    		}
+	    	}
+	    }
+		
+		
+		
+	}
+
+
+
+	public void balanceCheck(int accountnum) {
+		for (Entry<Integer,BankTransactions > m : hm.entrySet()) {
+			BankTransactions bTrans=m.getValue();
+			if (accountnum==(bTrans.getAccountNo()))
+			{
+				System.out.println("YOUR BALANCE IS :"+bTrans.getBalance());
+				break;
+			}
+		}
+		
+		
+		
+	}
+
+
+
+	public void depositAmount(int accountnum) {
+		System.out.println("ENTER THE AMOUNT TO BE DEPOSITED");
+		int amount= sc.nextInt();
+		for (Entry<Integer,BankTransactions > m : hm.entrySet()) {
+			BankTransactions bTrans=m.getValue();
+			if (accountnum==(bTrans.getAccountNo()))
+			{
+				int AmountDeposied= amount+bTrans.getBalance();
+				System.out.println(AmountDeposied);
+				bTrans .setBalance(AmountDeposied);
+			System.out.println("YOUR REMAINING BALANCE IS :"+bTrans.getBalance());
+				
+				break;
+			}
+		}
+	}
+
+
+
+	public void amountWithdrawn(int accountnum) {
+		System.out.println("ENTER THE AMOUNT TO BE WITHDRAWN");
+		int amount= sc.nextInt();
+		for (Entry<Integer,BankTransactions > m : hm.entrySet()) {
+			BankTransactions bTrans=m.getValue();
+			if (accountnum==(bTrans.getAccountNo()))
+			{
+				if(amount>bTrans.getBalance())
+				{
+					System.out.println("YOUR ACCOUNT BALANCE IS INSUFFICIENT TO MAKE TRANSACTION");
+				}
+				int AmountDeposied= bTrans.getBalance()-amount;
+				details.setBalance(AmountDeposied);
+				System.out.println("YOUR REMAINING BALANCE IS :"+bTrans.getBalance());
+				break;
+			}
+		
+	}
+		
+		
+	}
+
+	
+
+	
+}

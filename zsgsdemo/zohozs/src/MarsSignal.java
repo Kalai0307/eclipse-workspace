@@ -13,7 +13,7 @@ public class MarsSignal {
 			if(ch=='S'||ch=='O')
 			{
 				i++;
-				c
+				
 				//ch=s.charAt(i);
 				if(ch=='O')
 				{

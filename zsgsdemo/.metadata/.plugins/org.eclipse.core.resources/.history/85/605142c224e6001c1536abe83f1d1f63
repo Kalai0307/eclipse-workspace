@@ -1,0 +1,23 @@
+package VidhinSanAssign;
+
+public class AlphaDemo {
+
+	public static void main(String[] args) {
+System.out.println("enter a string");
+   String s= "abcde";
+   String s1="";
+   int i=0;
+   for( i=1;i<s.length();i++)
+   {
+	  s1=s1+s.charAt(i);
+   }
+   if(s1.charAt(i-1)>122) {
+	   s1=s1+90;
+   }
+   else {
+	   s1=s1+(s.charAt(0)+1);
+   }
+ System.out.println(s1);
+	}
+
+}
